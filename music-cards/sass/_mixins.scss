@@ -1,0 +1,60 @@
+/**
+ * /* @MIXIN START
+ *
+ * @format
+ */
+
+@mixin margin-padding-reset {
+	margin: 0;
+	padding: 0;
+}
+@mixin top-img-radius {
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+}
+
+@mixin bottom-body-radius {
+	border-radius: 0px 0px 30px 30px;
+	-webkit-border-radius: 0px 0px 30px 30p;
+	-moz-border-radius: 0px 0px 30px 30p;
+	-ms-border-radius: 0px 0px 30px 30p;
+	-o-border-radius: 0px 0px 30px 30p;
+}
+
+@mixin profile-img {
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+
+@mixin social-icon-radius {
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+
+@mixin social-icon-transition {
+	transition: all 0.9s ease-out;
+	-webkit-transition: all 0.9s ease-out;
+	-moz-transition: all 0.9s ease-out;
+	-ms-transition: all 0.9s ease-out;
+	-o-transition: all 0.9s ease-out;
+}
+
+/*Social color START*/
+
+@mixin animation {
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: fontgradient 2s ease infinite;
+	-webkit-animation: fontgradient 2s ease infinite;
+	-moz-animation: fontgradient 2s ease infinite;
+	animation: fontgradient 2s ease infinite;
+}
+/*Social color END*/
+
+/* @MIXIN END*/
