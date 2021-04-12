@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas
+      id="myCanvas"
+      width="200"
+      height="100"
+      style="border: 1px solid #000000"
+    >
+    </canvas>
+    <canvas
+      id="myCanvas2"
+      width="200"
+      height="100"
+      style="border: 1px solid #000000"
+    >
+    </canvas>
+    <canvas
+      id="myCanvas3"
+      width="200"
+      height="100"
+      style="border: 1px solid #000000"
+    >
+    </canvas>
+    <canvas
+      id="myCanvas4"
+      width="200"
+      height="100"
+      style="border: 1px solid #000000"
+    >
+    </canvas>
+    <canvas
+      id="myCanvas5"
+      width="200"
+      height="100"
+      style="border: 1px solid #000000"
+    >
+    </canvas>
+    <img id="guitar" src="guitar.png" width="200" height="100" alt="" />
+    <script>
+      let canvas = document.getElementById("myCanvas");
+      let ctx = canvas.getContext("2d");
+      ctx.font = "30px Arial";
+      ctx.fillText("Hey Fradely!", 15, 60);
+
+      let canvas2 = document.getElementById("myCanvas2");
+      let ctx2 = canvas2.getContext("2d");
+      ctx2.font = "30px Arial";
+      ctx2.strokeText("Hey Fradely!", 15, 60);
+
+      let canvas3 = document.getElementById("myCanvas3");
+      let ctx3 = canvas3.getContext("2d");
+      ctx3.font = "30px Comic Sans MS";
+      ctx3.fillStyle = "green";
+      ctx3.textAlign = "center";
+      ctx3.fillText("Hey Fra!", canvas3.width / 2, canvas3.height / 2);
+
+      window.onload = function () {
+        let canvas4 = document.getElementById("myCanvas4");
+        let ctx4 = canvas4.getContext("2d");
+        let img = document.getElementById("guitar");
+        ctx4.drawImage(img, 0, 0, 220, 100);
+      };
+    </script>
+  </body>
+</html>
